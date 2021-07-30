@@ -16,43 +16,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="bMf-JI-us7">
-                                <rect key="frame" x="30" y="297" width="354" height="302"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8m-GT-oBk">
-                                        <rect key="frame" x="153" y="0.0" width="48" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lJf-6P-wCd">
-                                        <rect key="frame" x="0.0" y="134" width="354" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="nickname"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yv5-nd-7PO">
-                                        <rect key="frame" x="154" y="268" width="46" height="34"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                </subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Представьтесь пожалуйста" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xID-Cz-e5V">
+                                <rect key="frame" x="30" y="94" width="356" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="lJf-6P-wCd" secondAttribute="trailing" id="88A-Mx-TRk"/>
-                                    <constraint firstItem="lJf-6P-wCd" firstAttribute="leading" secondItem="bMf-JI-us7" secondAttribute="leading" id="EGV-qU-Rwa"/>
+                                    <constraint firstAttribute="height" constant="200" id="ulK-kp-BJK"/>
                                 </constraints>
-                            </stackView>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Меня зовут..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O46-Nm-kkR">
+                                <rect key="frame" x="40" y="302" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wb1-B7-QLn"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ari-fy-gtl">
+                                <rect key="frame" x="132" y="386" width="150" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Подтвердить"/>
+                                <connections>
+                                    <action selector="joinAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="MaS-Vg-Zbi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
-                            <constraint firstItem="bMf-JI-us7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="PdX-Co-IAQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bMf-JI-us7" secondAttribute="trailing" constant="30" id="jb3-hn-KW9"/>
-                            <constraint firstItem="bMf-JI-us7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mFV-eB-ytn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xID-Cz-e5V" secondAttribute="trailing" constant="28" id="6Lx-aS-5sS"/>
+                            <constraint firstItem="ari-fy-gtl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GUx-1o-ScV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O46-Nm-kkR" secondAttribute="trailing" constant="40" id="Hh7-ou-Hmh"/>
+                            <constraint firstItem="xID-Cz-e5V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="LuX-Zg-hy0"/>
+                            <constraint firstItem="O46-Nm-kkR" firstAttribute="top" secondItem="xID-Cz-e5V" secondAttribute="bottom" constant="8" symbolic="YES" id="ZDN-JP-smT"/>
+                            <constraint firstItem="O46-Nm-kkR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Zgi-zw-4rl"/>
+                            <constraint firstItem="xID-Cz-e5V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="qtT-7a-eZL"/>
+                            <constraint firstItem="ari-fy-gtl" firstAttribute="top" secondItem="O46-Nm-kkR" secondAttribute="bottom" constant="50" id="ubM-7S-AWD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="enterTextField" destination="O46-Nm-kkR" id="PZ7-6D-Tzv"/>
+                        <segue destination="BnQ-Gw-FLp" kind="presentation" identifier="enterSegue" modalPresentationStyle="fullScreen" id="V1R-tv-ck9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141" y="63"/>
+            <point key="canvasLocation" x="140.57971014492756" y="62.946428571428569"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="BMV-in-e5f">
+            <objects>
+                <viewControllerPlaceholder id="BnQ-Gw-FLp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="KHw-tG-pxA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PcJ-UG-nXF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953" y="63"/>
         </scene>
     </scenes>
     <resources>

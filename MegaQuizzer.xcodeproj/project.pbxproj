@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B53AC76826B4231D007B8EBE /* EnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53AC76726B4231D007B8EBE /* EnterViewController.swift */; };
 		B56EE60F26B3CCE30072512B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EE60E26B3CCE30072512B /* AppDelegate.swift */; };
 		B56EE61126B3CCE30072512B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EE61026B3CCE30072512B /* SceneDelegate.swift */; };
-		B56EE61326B3CCE30072512B /* EnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56EE61226B3CCE30072512B /* EnterViewController.swift */; };
 		B56EE61626B3CCE30072512B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56EE61426B3CCE30072512B /* Main.storyboard */; };
 		B56EE61826B3CCE40072512B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56EE61726B3CCE40072512B /* Assets.xcassets */; };
 		B56EE61B26B3CCE40072512B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56EE61926B3CCE40072512B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B53AC76726B4231D007B8EBE /* EnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterViewController.swift; sourceTree = "<group>"; };
 		B56EE60B26B3CCE30072512B /* MegaQuizzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegaQuizzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56EE60E26B3CCE30072512B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B56EE61026B3CCE30072512B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B56EE61226B3CCE30072512B /* EnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterViewController.swift; sourceTree = "<group>"; };
 		B56EE61526B3CCE30072512B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B56EE61726B3CCE40072512B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B56EE61A26B3CCE40072512B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,9 +56,9 @@
 		B56EE60D26B3CCE30072512B /* MegaQuizzer */ = {
 			isa = PBXGroup;
 			children = (
+				B53AC76726B4231D007B8EBE /* EnterViewController.swift */,
 				B56EE60E26B3CCE30072512B /* AppDelegate.swift */,
 				B56EE61026B3CCE30072512B /* SceneDelegate.swift */,
-				B56EE61226B3CCE30072512B /* EnterViewController.swift */,
 				B56EE61426B3CCE30072512B /* Main.storyboard */,
 				B56EE61726B3CCE40072512B /* Assets.xcassets */,
 				B56EE61926B3CCE40072512B /* LaunchScreen.storyboard */,
@@ -137,9 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B56EE61326B3CCE30072512B /* EnterViewController.swift in Sources */,
 				B56EE60F26B3CCE30072512B /* AppDelegate.swift in Sources */,
 				B56EE61126B3CCE30072512B /* SceneDelegate.swift in Sources */,
+				B53AC76826B4231D007B8EBE /* EnterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
