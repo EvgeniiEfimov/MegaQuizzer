@@ -1,24 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vQ3-TK-iH9">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Topic-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MegaQuizzer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wZD-YS-bVd">
+                                <rect key="frame" x="0.0" y="91" width="320" height="4"/>
+                                <color key="progressTintColor" red="1" green="0.072889729104838596" blue="0.1755905345546267" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1621684182_22-phonoteka_org-p-fon-na-viktorinu-22" translatesAutoresizingMaskIntoConstraints="NO" id="6xm-IE-zpB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="qwestionTextLabel" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="y4n-85-hqK">
+                                <rect key="frame" x="72.5" y="135" width="175.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="redraw" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="ir6-R6-J0p">
+                                <rect key="frame" x="20" y="311.5" width="280" height="171"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyD-cr-dr9">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
+                                        <color key="backgroundColor" red="0.77481598618059044" green="0.79654642864923864" blue="0.47522521246298255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="oneValue"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMP-aR-syz">
+                                        <rect key="frame" x="0.0" y="47" width="280" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.77319670380000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="twoValue"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWV-ki-lia">
+                                        <rect key="frame" x="0.0" y="94" width="280" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.95090086110000005" blue="0.29467130590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="ThreeValue"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLh-9l-KNS">
+                                        <rect key="frame" x="0.0" y="141" width="280" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <state key="normal" title="fourValue"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wZD-YS-bVd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="A3V-vL-rh9"/>
+                            <constraint firstItem="6xm-IE-zpB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K2c-kA-JVz"/>
+                            <constraint firstItem="6xm-IE-zpB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="L1O-iT-qmT"/>
+                            <constraint firstItem="y4n-85-hqK" firstAttribute="top" secondItem="wZD-YS-bVd" secondAttribute="bottom" constant="40" id="S79-0f-T3C"/>
+                            <constraint firstItem="ir6-R6-J0p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U3U-LX-LWC"/>
+                            <constraint firstItem="ir6-R6-J0p" firstAttribute="top" secondItem="y4n-85-hqK" secondAttribute="bottom" constant="150" id="UVe-YH-eg2"/>
+                            <constraint firstItem="6xm-IE-zpB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UhT-fz-wc4"/>
+                            <constraint firstItem="y4n-85-hqK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f9V-U7-nrM"/>
+                            <constraint firstItem="ir6-R6-J0p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fMQ-M5-gCh"/>
+                            <constraint firstItem="6xm-IE-zpB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="gY4-fR-PzW"/>
+                            <constraint firstItem="wZD-YS-bVd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kCY-ro-8B3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ir6-R6-J0p" secondAttribute="trailing" constant="20" id="lCr-Uk-JHd"/>
+                            <constraint firstItem="wZD-YS-bVd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="scv-o7-vSY"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Topic" id="uvy-bS-nf9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="725.625" y="62.323943661971832"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xjg-A5-ibX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vQ3-TK-iH9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="O6i-Bi-FCu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Q7Q-w4-OeM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y0f-Tc-SEg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184.05797101449278" y="62.946428571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1621684182_22-phonoteka_org-p-fon-na-viktorinu-22" width="1600" height="900"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
