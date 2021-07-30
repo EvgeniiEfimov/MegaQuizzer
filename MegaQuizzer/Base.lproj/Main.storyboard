@@ -1,110 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vQ3-TK-iH9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Hf-Lr-80c">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Topic-->
-        <scene sceneID="tne-QT-ifu">
+        <!--View Controller-->
+        <scene sceneID="35y-A2-OqP">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MegaQuizzer" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="8Hf-Lr-80c" customClass="ViewController" customModule="MegaQuizzer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jmx-3P-W19">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wZD-YS-bVd">
-                                <rect key="frame" x="0.0" y="91" width="320" height="4"/>
-                                <color key="progressTintColor" red="1" green="0.072889729104838596" blue="0.1755905345546267" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </progressView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1621684182_22-phonoteka_org-p-fon-na-viktorinu-22" translatesAutoresizingMaskIntoConstraints="NO" id="6xm-IE-zpB">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="qwestionTextLabel" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="y4n-85-hqK">
-                                <rect key="frame" x="72.5" y="135" width="175.5" height="26.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="questText" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mt3-FF-uHT">
+                                <rect key="frame" x="20" y="133.5" width="280" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="redraw" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="ir6-R6-J0p">
-                                <rect key="frame" x="20" y="311.5" width="280" height="171"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Rht-Od-u4a">
+                                <rect key="frame" x="20" y="291.5" width="280" height="174"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyD-cr-dr9">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGy-uq-nfO">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
-                                        <color key="backgroundColor" red="0.77481598618059044" green="0.79654642864923864" blue="0.47522521246298255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="oneValue"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerAction:" destination="8Hf-Lr-80c" eventType="touchUpInside" id="rPW-c0-fxc"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMP-aR-syz">
-                                        <rect key="frame" x="0.0" y="47" width="280" height="30"/>
-                                        <color key="backgroundColor" red="1" green="0.77319670380000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="twoValue"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7y-Ku-1LY">
+                                        <rect key="frame" x="0.0" y="48" width="280" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerAction:" destination="8Hf-Lr-80c" eventType="touchUpInside" id="c8Z-A3-OaT"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWV-ki-lia">
-                                        <rect key="frame" x="0.0" y="94" width="280" height="30"/>
-                                        <color key="backgroundColor" red="1" green="0.95090086110000005" blue="0.29467130590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="ThreeValue"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aq-uV-EJd">
+                                        <rect key="frame" x="0.0" y="96" width="280" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerAction:" destination="8Hf-Lr-80c" eventType="touchUpInside" id="MmO-Qw-0Bp"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLh-9l-KNS">
-                                        <rect key="frame" x="0.0" y="141" width="280" height="30"/>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                        <state key="normal" title="fourValue"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ib1-5I-ekO">
+                                        <rect key="frame" x="0.0" y="144" width="280" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerAction:" destination="8Hf-Lr-80c" eventType="touchUpInside" id="LKK-rc-PH0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос № " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="gYG-pu-ghF">
+                                <rect key="frame" x="91.5" y="30" width="137" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHv-Zo-jlF">
+                                <rect key="frame" x="132" y="485.5" width="56" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Далее">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonAction:" destination="8Hf-Lr-80c" eventType="touchUpInside" id="hiz-7e-0zL"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="tX3-yL-UB4"/>
+                        <color key="backgroundColor" red="0.48882079119999999" green="0.32583963869999999" blue="0.83544105290000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wZD-YS-bVd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="A3V-vL-rh9"/>
-                            <constraint firstItem="6xm-IE-zpB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K2c-kA-JVz"/>
-                            <constraint firstItem="6xm-IE-zpB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="L1O-iT-qmT"/>
-                            <constraint firstItem="y4n-85-hqK" firstAttribute="top" secondItem="wZD-YS-bVd" secondAttribute="bottom" constant="40" id="S79-0f-T3C"/>
-                            <constraint firstItem="ir6-R6-J0p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U3U-LX-LWC"/>
-                            <constraint firstItem="ir6-R6-J0p" firstAttribute="top" secondItem="y4n-85-hqK" secondAttribute="bottom" constant="150" id="UVe-YH-eg2"/>
-                            <constraint firstItem="6xm-IE-zpB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UhT-fz-wc4"/>
-                            <constraint firstItem="y4n-85-hqK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f9V-U7-nrM"/>
-                            <constraint firstItem="ir6-R6-J0p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fMQ-M5-gCh"/>
-                            <constraint firstItem="6xm-IE-zpB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="gY4-fR-PzW"/>
-                            <constraint firstItem="wZD-YS-bVd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kCY-ro-8B3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ir6-R6-J0p" secondAttribute="trailing" constant="20" id="lCr-Uk-JHd"/>
-                            <constraint firstItem="wZD-YS-bVd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="scv-o7-vSY"/>
+                            <constraint firstItem="OHv-Zo-jlF" firstAttribute="centerX" secondItem="Jmx-3P-W19" secondAttribute="centerX" id="2FM-8X-OTg"/>
+                            <constraint firstItem="mt3-FF-uHT" firstAttribute="top" secondItem="gYG-pu-ghF" secondAttribute="bottom" constant="70" id="BOR-gF-Q8f"/>
+                            <constraint firstItem="tX3-yL-UB4" firstAttribute="trailing" secondItem="mt3-FF-uHT" secondAttribute="trailing" constant="20" id="Dj9-id-gua"/>
+                            <constraint firstItem="gYG-pu-ghF" firstAttribute="top" secondItem="tX3-yL-UB4" secondAttribute="top" constant="30" id="H7N-eM-Nm2"/>
+                            <constraint firstItem="tX3-yL-UB4" firstAttribute="trailing" secondItem="Rht-Od-u4a" secondAttribute="trailing" constant="20" id="I4J-nH-nKF"/>
+                            <constraint firstItem="gYG-pu-ghF" firstAttribute="centerX" secondItem="Jmx-3P-W19" secondAttribute="centerX" id="Kba-sx-1K9"/>
+                            <constraint firstItem="Rht-Od-u4a" firstAttribute="top" secondItem="mt3-FF-uHT" secondAttribute="bottom" constant="135" id="Ks5-RL-17S"/>
+                            <constraint firstItem="Rht-Od-u4a" firstAttribute="centerX" secondItem="Jmx-3P-W19" secondAttribute="centerX" id="amj-Gy-yvF"/>
+                            <constraint firstItem="OHv-Zo-jlF" firstAttribute="top" secondItem="Rht-Od-u4a" secondAttribute="bottom" constant="20" id="b5d-B6-rhG"/>
+                            <constraint firstItem="mt3-FF-uHT" firstAttribute="leading" secondItem="tX3-yL-UB4" secondAttribute="leading" constant="20" id="j30-27-tbB"/>
+                            <constraint firstItem="Rht-Od-u4a" firstAttribute="leading" secondItem="tX3-yL-UB4" secondAttribute="leading" constant="20" id="k3s-MW-2eT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Topic" id="uvy-bS-nf9"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="725.625" y="62.323943661971832"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Xjg-A5-ibX">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vQ3-TK-iH9" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="O6i-Bi-FCu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                    <navigationItem key="navigationItem" id="7Gu-2R-Ccz"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Q7Q-w4-OeM"/>
+                        <outlet property="answerFour" destination="ib1-5I-ekO" id="TB7-JF-vGg"/>
+                        <outlet property="answerOne" destination="QGy-uq-nfO" id="J7L-5I-dor"/>
+                        <outlet property="answerThree" destination="5aq-uV-EJd" id="fOc-Hm-edk"/>
+                        <outlet property="answerTwo" destination="K7y-Ku-1LY" id="vwH-tD-XMk"/>
+                        <outlet property="questionLabel" destination="gYG-pu-ghF" id="0dC-jv-jaB"/>
+                        <outlet property="wuestTextLabel" destination="mt3-FF-uHT" id="xvA-6U-CMX"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y0f-Tc-SEg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boE-04-wOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-184.05797101449278" y="62.946428571428569"/>
+            <point key="canvasLocation" x="108.75" y="-45.422535211267608"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="1621684182_22-phonoteka_org-p-fon-na-viktorinu-22" width="1600" height="900"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
