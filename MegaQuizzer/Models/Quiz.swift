@@ -9,5 +9,5 @@ import Foundation
 
 struct Quiz {
    var name: String //Название викторины
-   var questions: [QuestionCard] = [] //Объект из массива вопросов викторины
+   var questions: [QuestionCard] //Объект из массива вопросов викторины
 }
