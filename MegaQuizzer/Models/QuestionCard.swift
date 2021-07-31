@@ -6,7 +6,6 @@
 //
 
 struct QuestionCard {
-    var number: Int
     var questionText: String
     var answers: [Answer]  
 }
