@@ -17,6 +17,7 @@
 		B56EE61626B3CCE30072512B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56EE61426B3CCE30072512B /* Main.storyboard */; };
 		B56EE61826B3CCE40072512B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56EE61726B3CCE40072512B /* Assets.xcassets */; };
 		B56EE61B26B3CCE40072512B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56EE61926B3CCE40072512B /* LaunchScreen.storyboard */; };
+		CEA03EBD26B4BADF00334E5E /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA03EBC26B4BADE00334E5E /* QuizViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B56EE61726B3CCE40072512B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B56EE61A26B3CCE40072512B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B56EE61C26B3CCE40072512B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA03EBC26B4BADE00334E5E /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				B53AC76726B4231D007B8EBE /* EnterViewController.swift */,
+				CEA03EBC26B4BADE00334E5E /* QuizViewController.swift */,
 				B56EE60E26B3CCE30072512B /* AppDelegate.swift */,
 				B56EE61026B3CCE30072512B /* SceneDelegate.swift */,
 				59F2B55926B474B400385241 /* DataManagers */,
@@ -168,6 +171,7 @@
 				B56EE60F26B3CCE30072512B /* AppDelegate.swift in Sources */,
 				59F2B55626B4721600385241 /* QuestionCard.swift in Sources */,
 				B56EE61126B3CCE30072512B /* SceneDelegate.swift in Sources */,
+				CEA03EBD26B4BADF00334E5E /* QuizViewController.swift in Sources */,
 				59F2B55B26B474E500385241 /* QuizDataManager.swift in Sources */,
 				59F2B55826B4722800385241 /* Answer.swift in Sources */,
 				59F2B55426B471A000385241 /* Quiz.swift in Sources */,
