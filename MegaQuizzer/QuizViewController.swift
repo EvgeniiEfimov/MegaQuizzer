@@ -2,7 +2,7 @@
 //  QuizViewController.swift
 //  MegaQuizzer
 //
-//  Created by User on 31.07.2021.
+//  Created by Evgenii Efimov on 31.07.2021.
 //
 
 import UIKit
@@ -10,12 +10,14 @@ import UIKit
 class QuizViewController: UIViewController {
     @IBOutlet weak var numberQuestionLabel: UILabel!
     
+    @IBOutlet weak var quizName: UILabel!
+    
     @IBOutlet weak var textQuestionsLabel: UILabel!
         
     @IBOutlet var answerButtonArray: [UIButton]!
     
     
-    var quiz = QuizDataManager.shared.getQuizzes()[0] //времянка для теста
+    var quiz = QuizDataManager.shared.getQuizzes()[0] //времянка для теста!!!!!!!
     var score = 0
     var name: String!
     
@@ -29,11 +31,11 @@ class QuizViewController: UIViewController {
         data()
         numberAnswerText()
     }
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard <#condition#> else {
-//            <#statements#>
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let resultVC = segue.destination as? ResultVC else { return }
+        resultVC.userName = name
+        resultVC.result = score
+    }
     
     @IBAction func answerButtonAction(_ sender: UIButton) {
             sender.backgroundColor == UIColor.white ?
@@ -52,7 +54,7 @@ class QuizViewController: UIViewController {
             }
         print(score)
         } else {
-//            performSegue(withIdentifier: <#T##String#>, sender: nil) // <- переход на результат
+            performSegue(withIdentifier: "ResultVC", sender: nil) // <- переход на результат
         }
    }
    private func settingUI() {
@@ -60,7 +62,7 @@ class QuizViewController: UIViewController {
             answerButton.layer.cornerRadius = 10
             answerButton.isHidden = true
         }
-        
+    quizName.text = "Категория: \n\(quiz.name)"
         
     }
     
